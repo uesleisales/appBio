@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>ADECA</title>
+    </head>
+    <body>
+        
+        
+        <!--Aqui começa o menu do topo-->
+        
+        
+
+        
+          
+            
+
+
+            <nav style="height: 40px;float: right;background: #f39c12;">
+                  
+                  <!--Aqui começa o menu LATERAL-->
+                    <ul id="slide-out" class="side-nav" style="width: 80%; z-index: 9998; float: left;">
+                        <li><a href="#" class="waves-effect">Home</a></li>
+                        <li><a href="#" class="waves-effect">Nova denúncia</a></li>
+                        <li><a href="#" class="waves-effect">Notícias</a></li>
+                        <li><a href="#" class="waves-effect">Buscar código</a></li>
+                    </ul>
+
+                    <a id="btn" data-activates="slide-out" style="width: 72px;"><i class="material-icons" style="margin-left:6px;height: 36px; line-height: 36px;width: 72px;">menu</i></a>
+
+                  <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo" style="height: 36px;"><span style="margin-top: 6px;">Bem-vindo</span></a>
+                  </div>
+            </nav>  
+          
+       
+        
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#btn").sideNav();       
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>ADECA</title>
+    </head>
+    <body>
+        
+        
+        <!--Aqui começa o menu do topo-->
+          <div class="row" style="height: 4px;">
+
+            <nav style="height: 50px;float: right;background: #3498db;">
+                  
+                  <!--Aqui começa o menu LATERAL-->
+                    <ul id="slide-out" class="side-nav" style="width: 80%; z-index: 9998; float: left; background: #34495e;">
+
+
+                        <li><div class="userView">
+
+                          <a href=""><img class="responsive-img " src="<?php echo base_url('assets/img/logo2.png'); ?>"></a>
+
+                        </div></li>
+                        <li><div class="divider"></div></li>
+
+                        <li><a class="waves-effect purple darken-2" href=""><span class="white-text" > <font color="yellow"></font> </span></a></li>
+
+                        <li><a  href="#" class="waves-effect"><i class="material-icons yellow-text darken-1">add</i><span class="white-text" >Nova denúncia</span></a></li>
+
+                        <li><a  href="#" class="waves-effect"><i class="material-icons orange-text lighten-1">grade</i><span class="white-text" >Avaliações</span></a></li>
+
+                        <li><a  href="#" class="waves-effect"><i class="material-icons green-text lighten-4">contact_phone</i><span class="white-text" >Telefones</span></a></li>
+
+                        <li><a  href="#" class="waves-effect"><i class="material-icons lime-text lighten-4">format_line_spacing</i><span class="white-text" >Denúncias rescentes</span></a></li>
+
+                        <li><a  href="#" class="waves-effect"><i class="material-icons cyan-text accent-2">search</i><span class="white-text" >Buscar </span></a></li>
+
+                        <li><a  href="#" class="waves-effect"><i class="material-icons light-green-text accent-3">show_chart</i><span class="white-text" >Estatísticas</span></a></li>
+
+                        <li><div class="divider"></div></li>
+                        <li><a class="grey darken-4 " href=""><i class="material-icons white-text">input</i><span class="white-text" >Sair</span></a></li>
+                    </ul>
+
+                    <a id="btn" data-activates="slide-out" style="width: 72px;"><i class="material-icons" style="margin-left:13px;height: 45px; line-height: 45px;width: 72px;">menu</i></a>
+
+
+                  
+            </nav> 
+            
+            </div>
+
+            <div  style="background: #e74c3c;height: 90px;margin-top: 0;">
+                    
+                    <div class="nav-content">
+                                            <ul class="tabs tabs-transparent">
+                        <li class="tab"><a href="#test1">Notícias</a></li>
+                        <li class="tab"><a class="active" href="#test2">Início</a></li>
+                        <li class="tab"><a href="#test3">Mapas</a></li>
+                        <li class="tab"><a href="#test4">Leituras</a></li>
+                      </ul>
+                    </div>
+                    
+            </div>
+
+            <div class="row">
+              <br>
+              <div class="col offset-s3 m6">
+                  
+                  <a class="waves-effect waves-light btn" style="background: #f1c40f;"><i class="material-icons center">add</i></a>
+                  <a class="waves-effect waves-light btn" style="background: #8e44ad;"><i class="material-icons center">search</i></a>
+
+              </div>
+            </div>
+
+
+
+            <!--Aqui começa o corpo do site-->
+            <div class="row" id="favoritos">
+
+             <span class="blue-text" style="text-align:center;margin-left: 28%;">Notícias de seu interesse</span>
+
+            <ul class="collection">
+                <li class="collection-item avatar">
+                  <img src="img/animal.png" alt="" class="circle">
+                  <span class="title">Animais</span>
+                  <p>First Line <br>
+                     Second Line
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <img src="img/plantas.png" alt="" class="circle">
+                  <span class="title">Ecologia</span>
+                  <p>First Line <br>
+                     Second Line
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <img src="img/desmatamento.png" alt="" class="circle">
+                  <span class="title">Desmatamento</span>
+                  <p>First Line <br>
+                     Second Line
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <img src="img/radar.png" alt="" class="circle">
+                  <span class="title">Tecnologia & meio ambiente</span>
+                  <p>First Line <br>
+                     Second Line
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+            </ul>
+            </div>
+       
+        
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#btn").sideNav();       
+            });
+        </script>
+    </body>
+</html>
